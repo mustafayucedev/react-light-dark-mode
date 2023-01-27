@@ -4,7 +4,6 @@
     --title: #674188;
     --form-background: #F7EFE5;
     --form-title: #C3ACD0;
-    --link-title: #EBC7E6;
     --button-background: #674188;
     --transition: ease-in-out all .4s;
 }
@@ -14,7 +13,6 @@ body[data-theme="dark"] {
     --title:#FFFBF5;
     --form-background: #C3ACD0;
     --form-title: #ffffff;
-    --link-title: #C3ACD0;
 }
 
 body {
