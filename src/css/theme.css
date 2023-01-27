@@ -1,0 +1,91 @@
+:root {
+    --white-color: #ffffff;
+    --background-color:#FFFBF5;
+    --title: #674188;
+    --form-background: #F7EFE5;
+    --form-title: #C3ACD0;
+    --link-title: #EBC7E6;
+    --button-background: #674188;
+    --transition: ease-in-out all .4s;
+}
+
+body[data-theme="dark"] {
+    --background-color:#674188;
+    --title:#FFFBF5;
+    --form-background: #C3ACD0;
+    --form-title: #ffffff;
+    --link-title: #C3ACD0;
+}
+
+body {
+    background-color: var(--background-color);
+    transition: var(--transition);
+}
+
+.container {
+    background-color: var(--form-background);
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--title);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+form > input {
+    display: block;
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--form-title);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+form > input::placeholder {
+    color: var(--form-title);
+}
+
+form > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: var(--button-background);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form + div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form + div > a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--title);
+}
+
+footer > button {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
